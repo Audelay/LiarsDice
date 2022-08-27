@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div>
+            <h1>Liar's Dice</h1>
+            <h2>Play Liar's Dice vs. a computer</h2>
+        </div>
+        <div class="seperator"></div>
+
+        <h2>User Input</h2>
+        <form>
+            <label for="playerCount">How many players are there?</label><br/>
+            <input type="text" id="playerCount" name="playerCount"><br/>
+            <input type="button" value="Continue" onclick="checkPlayerCount()">
+        </form>
+
+        <h2>Check the dice</h2>
+        <form>
+            <label for="playerCount">How many dice are there?</label><br/>
+            <input type="text" id="diceNumber" name="diceNumber"><br/>
+            <input type="text" id="diceCount" name="diceCount"><br/>
+            <input type="button" value="Check" onclick="checkDice()">
+        </form>
+
+        <div class="seperator"></div>
+        <p id="testingRange"></p>
+        <p id="playerOne"></p>
+        <p id="playerTwo"></p>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
